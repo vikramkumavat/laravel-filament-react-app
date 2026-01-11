@@ -1,0 +1,45 @@
+@media print {
+    body {
+        background: white !important;
+    }
+
+    .auction-print-list {
+        padding: 0.5rem;
+    }
+
+    .auction-item {
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 1px #070000;
+        page-break-inside: avoid;
+    }
+
+    .auction-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    header, footer, nav, .pagination, .print-button {
+        display: none !important;
+    }
+}
+
+@media print {
+    .auction-print-container {
+        margin-top: 100px; /* 👈 Adjust this value as needed */
+    }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  1.5% { transform: translateX(-5px); }
+  3% { transform: translateX(5px); }
+  4.5% { transform: translateX(-5px); }
+  6% { transform: translateX(5px); }
+  7.5% { transform: translateX(0); }
+  /* The rest of the time (92.5%) it stays still */
+}
+
+.shake {
+  animation: shake 4s infinite ease-in-out;
+}

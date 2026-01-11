@@ -1,0 +1,26 @@
+// ---------------------------------------------------------------
+// if css is not loading, run this command
+// ---------------------------------------------------------------
+php artisan filament:assets
+
+
+// ---------------------------------------------------------------
+
+
+php artisan make:filament-resource Properties
+
+// --------------------------------
+
+php artisan make:model PropertyType -m
+
+// --------------------------------
+
+php artisan make:filament-resource PropertyType
+
+php artisan make:filament-resource Auction
+
+// --------------------------------
+
+php artisan make:filament-resource DatabaseManagerResource
+
+php artisan make:model DatabaseManager
