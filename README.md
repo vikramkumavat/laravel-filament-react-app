@@ -104,16 +104,21 @@ APP_DEBUG=true
 APP_URL=http://localhost:8000
 
 # Database Configuration
-DB_CONNECTION=mysql
+# setup for SQLite by default
+DB_CONNECTION=sqlite
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=your_database_user
-DB_PASSWORD=your_database_password
+DB_DATABASE=laravel_db
+DB_USERNAME=root
+DB_PASSWORD=
 
-# For SQLite (alternative)
-# DB_CONNECTION=sqlite
-# DB_DATABASE=/absolute/path/to/database.sqlite
+# For MySQL
+# DB_CONNECTION=mysql
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=your_database_name
+# DB_USERNAME=your_database_user
+# DB_PASSWORD=your_database_password
 
 # Cache & Session
 CACHE_STORE=database
